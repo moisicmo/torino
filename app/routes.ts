@@ -17,7 +17,4 @@ export default [
     ]),
   ]),
 
-
-  route("deep-link-redirect", "routes/deep-link-redirect.tsx"),
-
 ] satisfies RouteConfig;
