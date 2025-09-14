@@ -114,7 +114,7 @@ export const StaffCreate = (props: Props) => {
           </div>
           <SelectCustom
             multiple
-            label="Sucursales"
+            label="Negocios"
             options={dataBranch.data?.map((branch) => ({ id: branch.id, value: branch.name })) ?? []}
             selected={branches.map((s: BranchModel) => ({ id: s.id, value: s.name }))}
             onSelect={(values) => {

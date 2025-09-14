@@ -19,10 +19,10 @@ const branchView = () => {
     <>
       {/* Encabezado */}
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold text-gray-800">Sucursales</h2>
+        <h2 className="text-xl font-semibold text-gray-800">Negocios</h2>
         <Button
           onClick={() => handleDialog(true)}
-        >Nueva Sucursal</Button>
+        >Nueva Negocio</Button>
       </div>
 
       {/* Tabla de branch */}

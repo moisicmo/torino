@@ -31,7 +31,7 @@ export const useBranchStore = () => {
       const { data } = await coffeApi.post(`/${baseUrl}/`, body);
       console.log(data)
       getBranches();
-      showSuccess('Sucursal creado correctamente');
+      showSuccess('Negocio creado correctamente');
     } catch (error: any) {
       throw handleError(error);
     }
@@ -42,7 +42,7 @@ export const useBranchStore = () => {
       const { data } = await coffeApi.patch(`/${baseUrl}/${id}`, body);
       console.log(data)
       getBranches();
-      showSuccess('Sucursal editado correctamente');
+      showSuccess('Negocio editado correctamente');
     } catch (error: any) {
       throw handleError(error);
     }
@@ -54,9 +54,9 @@ export const useBranchStore = () => {
       if (result.isConfirmed) {
         await coffeApi.delete(`/${baseUrl}/${id}`);
         getBranches();
-        showSuccess('Sucursal eliminado correctamente');
+        showSuccess('Negocio eliminado correctamente');
       } else {
-        showError('Cancelado', 'La sucursal esta a salvo :)');
+        showError('Cancelado', 'La negocio esta a salvo :)');
       }
     } catch (error) {
       throw handleError(error);

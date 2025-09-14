@@ -54,7 +54,7 @@ export const ProductTable = (props: Props) => {
         <TableHeader>
           <TableRow>
             <TableHead>Nombre</TableHead>
-            <TableHead>Sucursal</TableHead>
+            <TableHead>Negocio</TableHead>
             <TableHead>Número de sesiones</TableHead>
             <TableHead>Costo estimado por sesión</TableHead>
             <TableHead className="sticky right-0 z-10 bg-white">Acciones</TableHead>

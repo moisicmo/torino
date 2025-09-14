@@ -45,7 +45,7 @@ export const BranchTable = (props: Props) => {
         <InputCustom
           name="query"
           value={query}
-          placeholder="Buscar sucursal..."
+          placeholder="Buscar negocio..."
           onChange={(e) => setQuery(e.target.value)}
         />
       </div>

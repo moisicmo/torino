@@ -36,5 +36,5 @@ export const formStaffValidations: FormStaffValidations = {
     email: [(value) => value.length > 0, 'Debe ingresar el correo electrónico'],
   },
   role: [(value) => value != null, 'Debe ingresar un rol'],
-  branches: [(value) => value.length > 0, 'Debe ingresar al menos una sucursal'],
+  branches: [(value) => value.length > 0, 'Debe ingresar al menos una negocio'],
 };

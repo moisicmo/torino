@@ -86,7 +86,7 @@ export const ProductCreate = (props: Props) => {
     <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
       <div className="bg-white rounded-lg w-full max-w-lg p-6 max-h-[90vh] overflow-y-auto">
         <h2 className="text-xl font-bold mb-4">
-          {item ? 'Editar Sucursal' : 'Nueva Sucursal'}
+          {item ? 'Editar Negocio' : 'Nueva Negocio'}
         </h2>
 
         <form onSubmit={sendSubmit} className="space-y-4">
@@ -104,7 +104,7 @@ export const ProductCreate = (props: Props) => {
             helperText={formSubmitted ? categoryValid : ''}
           />
           <SelectCustom
-            label="Sucursal"
+            label="Negocio"
             options={dataBranch.data?.map((branch) => ({ id: branch.id, value: branch.name })) ?? []}
             selected={branch ? { id: branch.id, value: branch.name } : null}
             onSelect={(value) => {

@@ -33,7 +33,7 @@ interface FormProductValidations {
 }
 export const formProductValidations: FormProductValidations = {
   category: [(value) => value != null, 'Debe ingresar la categoria'],
-  branch: [(value) => value != null, 'Debe ingresar la sucursal'],
+  branch: [(value) => value != null, 'Debe ingresar la negocio'],
   name: [(value) => value.length >= 1, 'Debe ingresar el nombre'],
   typeUnit: [(value) => value.length > 0, 'Debe ingresar el número de sesiones'],
   price: [(value) => value.length > 0, 'Debe ingresar el costo estimado por sesión'],
