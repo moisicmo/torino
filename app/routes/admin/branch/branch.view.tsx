@@ -22,7 +22,7 @@ const branchView = () => {
         <h2 className="text-xl font-semibold text-gray-800">Negocios</h2>
         <Button
           onClick={() => handleDialog(true)}
-        >Nueva Negocio</Button>
+        >Nuevo Negocio</Button>
       </div>
 
       {/* Tabla de branch */}
