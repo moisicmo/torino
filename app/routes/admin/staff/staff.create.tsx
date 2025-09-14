@@ -53,7 +53,7 @@ export const StaffCreate = (props: Props) => {
         branchIds: branches.map((branch: BranchModel) => branch.id),
       });
     } else {
-      await onUpdate(item.userId, {
+      await onUpdate(item.id, {
         numberDocument: user.numberDocument,
         typeDocument: 'DNI',
         name: user.name.trim(),
@@ -86,7 +86,7 @@ export const StaffCreate = (props: Props) => {
     <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
       <div className="bg-white rounded-lg w-full max-w-lg p-6 max-h-[90vh] overflow-y-auto">
         <h2 className="text-xl font-bold mb-4">
-          {item ? `Editar ${item.user.name}` : 'Nuevo Staff'}
+          {item ? `Editar ${item.name}` : 'Nuevo Staff'}
         </h2>
 
         <form onSubmit={sendSubmit} className="space-y-4">
